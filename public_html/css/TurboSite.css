@@ -1,36 +1,46 @@
-#mySidenav a {
-    position: absolute; /* Position them relative to the browser window */
-    left: -80px; /* Position them outside of the screen */
-    transition: 0.3s; /* Add transition on hover */
-    padding: 15px; /* 15px padding */
-    width: 100px; /* Set a specific width */
-    text-decoration: none; /* Remove underline */
-    font-size: 20px; /* Increase font size */
-    color: white; /* White text color */
-    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+div.sideMenu {
+	position: fixed;
+	height: 100%;
+	top: 0,
+	left: 0,
+	background: white;
+	width: 20%;
+	padding: 10px;
 }
 
-#mySidenav a:hover {
-    left: 0; /* On mouse-over, make the elements appear as they should */
+a.about {
+	display:block;
+	width: 100px;
+	height: 100px;
+	background: url(/img/test_passed1600.png) no-repeat center center;
+	background-size: contain;
 }
 
-/* The about link: 20px from the top with a green background */
-#about {
-    top: 20px;
-    background-color: #4CAF50;
+a.about:hover {
+	background-image : url(/img/test_passed1601.png);
 }
 
-#blog {
-    top: 80px;
-    background-color: #2196F3; /* Blue */
+a.gallery {
+	display:block;
+	width: 100px;
+	height: 100px;
+	background: url(/img/test_passed1600.png) no-repeat center center;
+	background-size: contain;
 }
 
-#projects {
-    top: 140px;
-    background-color: #f44336; /* Red */
+a.gallery:hover {
+	background-image : url(/img/test_passed1601.png);
 }
 
-#contact {
-    top: 200px;
-    background-color: #555 /* Light Black */
+a.other {
+	display:block;
+	width: 100px;
+	height: 100px;
+	background: url(/img/test_passed1600.png) no-repeat center center;
+	background-size: contain;
 }
+
+a.other:hover {
+	background-image : url(/img/test_passed1601.png);
+}
+

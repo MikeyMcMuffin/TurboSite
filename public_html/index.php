@@ -1,10 +1,15 @@
-Mijans is a butt and so am I.
+<!DOCTYPE html>
+<html>
 <head>
-<link rel="stylesheet" type="text/css" href="/css/TurboSite.css">
+	<title>Turbo Countdown</title>
+	<link rel="stylesheet" type="text/css" href="/css/TurboSite.css">
+	<script language="javascript" type="text/javascript"></script>
 </head>
-<div id="mySidenav" class="sidenav">
-  <a href="#" id="about">About</a>
-  <a href="#" id="blog">Blog</a>
-  <a href="#" id="projects">Projects</a>
-  <a href="#" id="contact">Contact</a>
+
+<div class="sideMenu">
+	<a href="#" class="about"></a>
+	<a href="#" class="gallery"></a>
+	<a href="#" class="other"></a>
 </div>
+
+</html>
