@@ -6,7 +6,7 @@
 	<script language="javascript" type="text/javascript"></script>
 </head>
 
-This is the dev code. If you see this pull is success!
+This is the dev code. If you see this pull is success!!!
 <div class="sideMenu">
 	<a href="#" class="about"></a>
 	<a href="#" class="gallery"></a>
