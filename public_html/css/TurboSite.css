@@ -1,3 +1,11 @@
+/*Page Footer*/
+footer {
+	width: 100%;
+	bottom:0;
+	position:fixed;
+}
+
+/*Side Navigation*/
 div.sideMenu {
 	height: 100%;
 	top: 0,
@@ -44,7 +52,9 @@ a.other:hover {
 	background-image : url(/img/test_passed1601.png);
 }
 
+/*Countdown Timer*/
 #timer {
 	float:left;
+	width: 30%;
 }
 
