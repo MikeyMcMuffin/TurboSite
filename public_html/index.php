@@ -3,10 +3,22 @@
 <head>
 	<title>Turbo Countdown</title>
 	<link rel="stylesheet" type="text/css" href="/css/TurboSite.css">
-	<script language="javascript" type="text/javascript"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.countdown.css"> 
+	<script type="text/javascript" src="js/jquery.plugin.js"></script> 
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	<script language="javascript" type="text/javascript">
+	$(document).ready(function (){
+		$(timer).countdown({
+			until: new Date(2020, 8-1, 8),
+			padZeros: true
+		});
+	});
+	</script>
 </head>
 
-This is the dev code. If you see this pull is success!!!
+<div id="timer"></div>
+
 <div class="sideMenu">
 	<a href="#" class="about"></a>
 	<a href="#" class="gallery"></a>
