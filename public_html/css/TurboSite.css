@@ -3,10 +3,9 @@ div.container {
 }
 
 /*Page Footer*/
-footer {
+div.footer {
 	width: 100%;
 	bottom:0;
-	position:fixed;
 }
 
 /*Side Navigation*/
@@ -22,7 +21,7 @@ div.sideMenu {
 
 a.about {
 	display:block;
-	width: 12%;
+	width: 100%;
 	height: 100px;
 	background: url(/img/test_passed1600.png) no-repeat center center;
 	background-size: contain;
@@ -34,7 +33,7 @@ a.about:hover {
 
 a.gallery {
 	display:block;
-	width: 12%;
+	width: 100%;
 	height: 100px;
 	background: url(/img/test_passed1600.png) no-repeat center center;
 	background-size: contain;
@@ -46,7 +45,7 @@ a.gallery:hover {
 
 a.other {
 	display:block;
-	width: 12%;
+	width: 100%;
 	height: 100px;
 	background: url(/img/test_passed1600.png) no-repeat center center;
 	background-size: contain;
