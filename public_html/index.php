@@ -17,12 +17,18 @@
 	</script>
 </head>
 
-<div id="timer"></div>
+<header>
+	<h1>Header image will go here</h1>
+</header>
 
 <div class="sideMenu">
 	<a href="#" class="about"></a>
 	<a href="#" class="gallery"></a>
 	<a href="#" class="other"></a>
 </div>
+
+<div id="timer"></div>
+
+<footer>Footer text will go here</footer>
 
 </html>

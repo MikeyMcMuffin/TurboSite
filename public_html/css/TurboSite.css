@@ -1,16 +1,16 @@
 div.sideMenu {
-	position: fixed;
 	height: 100%;
 	top: 0,
 	left: 0,
 	background: white;
-	width: 20%;
+	width: 15%;
 	padding: 10px;
+	float: left;
 }
 
 a.about {
 	display:block;
-	width: 100px;
+	width: 12%;
 	height: 100px;
 	background: url(/img/test_passed1600.png) no-repeat center center;
 	background-size: contain;
@@ -22,7 +22,7 @@ a.about:hover {
 
 a.gallery {
 	display:block;
-	width: 100px;
+	width: 12%;
 	height: 100px;
 	background: url(/img/test_passed1600.png) no-repeat center center;
 	background-size: contain;
@@ -34,7 +34,7 @@ a.gallery:hover {
 
 a.other {
 	display:block;
-	width: 100px;
+	width: 12%;
 	height: 100px;
 	background: url(/img/test_passed1600.png) no-repeat center center;
 	background-size: contain;
@@ -42,5 +42,9 @@ a.other {
 
 a.other:hover {
 	background-image : url(/img/test_passed1601.png);
+}
+
+#timer {
+	float:left;
 }
 
