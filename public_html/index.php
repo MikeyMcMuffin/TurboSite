@@ -16,6 +16,8 @@
 	});
 	</script>
 </head>
+<body>
+<div class="container">
 
 <header>
 	<h1>Header image will go here</h1>
@@ -27,8 +29,9 @@
 	<a href="#" class="other"></a>
 </div>
 
-<div id="timer"></div>
+<div id="timer"/>
 
 <footer>Footer text will go here</footer>
-
+</div>
+</body>
 </html>
