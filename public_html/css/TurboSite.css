@@ -23,7 +23,7 @@ div.sideMenu {
 a.about {
 	display:block;
 	width: 12%;
-	height: 33%;
+	height: 100px;
 	background: url(/img/test_passed1600.png) no-repeat center center;
 	background-size: contain;
 }
@@ -35,7 +35,7 @@ a.about:hover {
 a.gallery {
 	display:block;
 	width: 12%;
-	height: 33%;
+	height: 100px;
 	background: url(/img/test_passed1600.png) no-repeat center center;
 	background-size: contain;
 }
@@ -47,7 +47,7 @@ a.gallery:hover {
 a.other {
 	display:block;
 	width: 12%;
-	height: 33%;
+	height: 100px;
 	background: url(/img/test_passed1600.png) no-repeat center center;
 	background-size: contain;
 }

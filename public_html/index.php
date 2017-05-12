@@ -32,6 +32,7 @@
 <div id="timer"/>
 
 <footer>Footer text will go here</footer>
+
 </div>
 </body>
 </html>
