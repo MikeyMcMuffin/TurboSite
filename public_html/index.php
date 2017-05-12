@@ -29,9 +29,11 @@
 	<a href="#" class="other"></a>
 </div>
 
-<div id="timer"/>
+<div id="timer"></div>
 
-<div class="footer">This footer will always be positioned at the bottom of the page, but <strong>not fixed</strong>.</div>
+<footer>
+	Footer text will go here
+</footer>
 
 </div>
 </body>

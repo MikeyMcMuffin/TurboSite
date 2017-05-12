@@ -3,9 +3,10 @@ div.container {
 }
 
 /*Page Footer*/
-div.footer {
+footer {
 	width: 100%;
 	bottom:0;
+	position:fixed;
 }
 
 /*Side Navigation*/
