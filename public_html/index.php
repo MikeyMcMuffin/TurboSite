@@ -32,7 +32,7 @@
 <div id="timer"></div>
 
 <footer>
-	Footer text will go here
+	Footer text will go here. Test boop.
 </footer>
 
 </div>
