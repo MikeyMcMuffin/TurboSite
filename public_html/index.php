@@ -1,3 +1,16 @@
+<?php
+require_once '../init/init.php';
+
+$user = DB::getInstance()->get('users', array('username', '=', 'muffin')); 
+
+if(!$user->count()){
+	echo 'No user';
+}else{
+	foreach($user->results() as $user) {
+		echo $user->username, '<br>';
+	}
+} 
+?>
 <!DOCTYPE html>
 <html>
 <head>
