@@ -76,6 +76,49 @@ class DB {
 		return $this->action('DELETE *', $table, $where);
 	}
 
+	public function insert($table,$fields = array()){
+		$keys = array_keys($fields);
+		$values = '';
+		$x = 1;
+
+		foreach($fields as $field) { //iterates through the number of fields and gives a value of ? to each
+			$values .= '?';
+			if($x < count($fields)){ //adds a coma to the end of each ? except the last one
+			$values .= ', ';
+			}
+			$x++;
+		}
+
+		$sql= "INSERT INTO {$table} (`" . implode('`, `',$keys) . "`) VALUES ({$values})";
+
+		if($this->query($sql, $fields)->error()){
+			return true;
+		}
+		
+		return false;
+	}
+
+	public function update($table, $id, $fields){
+		$set = '';
+		$x= 1;
+
+		foreach($fields as $name => $value) {
+			$set .= "{$name} = ?";
+			if($x < count($fields)){
+				$set .= ', ';
+			}
+			$x++;
+		}
+
+		$sql= "UPDATE {$table} SET {$set} WHERE users_id = {$id}";
+
+		if($this->query($sql, $fields)->error()){
+			return true;
+		}
+
+		return false;
+	}
+
 	public function results(){ //returns cerrent results
 		return $this->_results;
 	}
