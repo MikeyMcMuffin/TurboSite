@@ -31,7 +31,7 @@ if(Input::exists()){
 			));
 
 		if($validation->passed()){
-			echo 'Passed';
+			Session::flash('success', 'You have registered successfully!');
 		} else {
 			foreach($validation->errors() as $error){
 				echo $error, '<br>';
