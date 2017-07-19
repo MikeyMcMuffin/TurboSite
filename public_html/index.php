@@ -1,7 +1,9 @@
 <?php
 require_once '../init/init.php';
 
-$user = Input::get('username'); 
+if(Session::exists('home')) {
+	echo '<p>' . Session::flash('home') . '</p>';
+}
 
 ?>
 <!DOCTYPE html>

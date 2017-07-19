@@ -31,7 +31,26 @@ if(Input::exists()){
 			));
 
 		if($validation->passed()){
-			Session::flash('success', 'You have registered successfully!');
+			$user = new User();
+			
+			$salt = Hash::salt(32);
+			
+			try {
+				
+				$user->create(array(
+					'username' => Input::get('username'),
+					'password' => Hash::make(Input::get('password'), $salt),
+					'salt' => $salt,
+					'name' => Input::get('name'),
+					'joined' => date('Y-m-d H:i:s'),
+					'group' => 1
+				));
+				
+				Session::flash('home', 'You have been registered and can not login');
+				Redirect::to('index.php');
+			} catch(Exception $e) {
+				die($e->getMessage());
+			}
 		} else {
 			foreach($validation->errors() as $error){
 				echo $error, '<br>';
