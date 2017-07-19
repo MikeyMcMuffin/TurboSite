@@ -17,6 +17,13 @@ body{
     font-family: arial, sans-serif;
 }
 
+hr{
+    border:none;
+    border-bottom: 2px dashed white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .main-background{
     background-image: url(../img/blu_wall_top.jpg);
     background-size: 400px 400px;
@@ -29,13 +36,16 @@ body{
     height: 400px;
 }
 
-.gradient_1{
-    height: 100%;
+.gradient_1, .gradient_2{
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+5,d7dee3+50,333333+95&1+5,0+20,0+80,1+95 */
     background: -moz-linear-gradient(left, rgba(51,51,51,1) 5%, rgba(106,108,110,0) 20%, rgba(215,222,227,0) 50%, rgba(106,108,110,0) 80%, rgba(51,51,51,1) 95%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(51,51,51,1) 5%,rgba(106,108,110,0) 20%,rgba(215,222,227,0) 50%,rgba(106,108,110,0) 80%,rgba(51,51,51,1) 95%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, rgba(51,51,51,1) 5%,rgba(106,108,110,0) 20%,rgba(215,222,227,0) 50%,rgba(106,108,110,0) 80%,rgba(51,51,51,1) 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#333333',GradientType=1 ); /* IE6-9 */
+}
+
+.gradient_2{
+    height: 400px;
 }
 
 .logo{
@@ -89,6 +99,7 @@ body{
     width: 100%;
     margin: auto;
 
+
     font-family: tf2-chalk, sans-serif;
     color: white;
     padding: 25px;
@@ -110,6 +121,13 @@ body{
 
 .help{
     display: none;
+}
+
+.help_div, .post{
+    border-bottom: 2px dashed white;
+    border-top: 2px dashed white;
+    padding: 25px 0 25px 0;
+    margin-bottom: 20px;
 }
 
 .intro{
@@ -146,6 +164,7 @@ body{
 .close_btn{
     margin-top: 70px;
 }
+
 
 footer{
     width: 75%;

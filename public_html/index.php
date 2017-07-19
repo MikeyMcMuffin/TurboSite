@@ -50,24 +50,57 @@ if(!$user->count()){
 
         <div class="container">
 
-            <div class="btn_help">
-                <button class="btn_1">How does this work?</button>
-            </div>
 
-            <div class="help">
+            <div class="help_div">
 
-                <h1>How to add an event:</h1>
-                <div class="intro">
-                    <p>Simply fill in the form with the title and description of the event. Don't forget to add a date! Without it, the countdown doesn't work and boy do we want it to work cause we went through a lot of effort to get it working, you know what that timer was actually doing? It was a countdown for the next tf2 event but it wasn't doing anything so we took it.</p>
+                <div class="btn_help">
+                    <button class="btn_1">How does this work?</button>
                 </div>
 
+                <div class="help">
+
+                    <h1>How to add an event:</h1>
+                    <div class="intro">
+                        <p>Simply fill in the form with the title and description of the event. Don't forget to add a date! Without it, the countdown doesn't work and boy do we want it to work cause we went through a lot of effort to get it working, you know what that timer was actually doing? It was a countdown for the next tf2 event but it wasn't doing anything so we took it.</p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+            <div class="post">
+                <!-- Need to add, profile pic -->
+                <h1>Pax south 2018</h1>
+                <h2>Posted by: Mikey McMuffin</h2>
+                <p>Location: San Antonio, Texas</p>
+                <!-- maybe add picture of location? -->
+                <p>Mission: To have a good time in texas!</p>
+                <p>Agents: ...</p>
+                <!-- show all other turbos that will join -->
+                <p>Date: 17/01/18</p>
+                <!-- show all other turbos that will join -->
+            </div>
+
+            <div class="post">
+                <!-- Need to add, profile pic -->
+                <h1>Gamescon 2378</h1>
+                <h2>Posted by: Mijans</h2>
+                <p>Location: Keulen, Germany</p>
+                <!-- maybe add picture of location? -->
+                <p>Mission: Run around Germany and play some TF2 during gamescon!</p>
+                <p>Agents: ...</p>
+                <!-- show all other turbos that will join -->
+                <p>Date: 22/08/78</p>
+                <!-- show all other turbos that will join -->
             </div>
         </div>
 
     </div>
 </div>
 <div class="bottom-background">
-    <div class="gradient_1">
+    <div class="gradient_2">
 
     </div>
 </div>
