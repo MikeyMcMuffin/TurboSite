@@ -50,7 +50,6 @@ if(!$user->count()){
 
         <div class="container">
 
-
             <div class="help_div">
 
                 <div class="btn_help">
@@ -95,6 +94,7 @@ if(!$user->count()){
                 <p>Date: 22/08/78</p>
                 <!-- show all other turbos that will join -->
             </div>
+
         </div>
 
     </div>
