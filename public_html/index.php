@@ -15,8 +15,9 @@ if(!$user->count()){
 <html>
 <head>
 	<title>Turbo Countdown</title>
-	<link rel="stylesheet" type="text/css" href="/css/TurboSite.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.countdown.css"> 
 	<script type="text/javascript" src="js/jquery.plugin.js"></script> 
 	<script type="text/javascript" src="js/jquery.countdown.js"></script>
@@ -30,24 +31,49 @@ if(!$user->count()){
 	</script>
 </head>
 <body>
-<div class="container">
 
-<header>
-	<h1>Header image will go here</h1>
-</header>
+<script src="js/effects.js"></script>
 
-<div class="sideMenu">
-	<a href="#" class="about"></a>
-	<a href="#" class="gallery"></a>
-	<a href="#" class="other"></a>
+<div class="main-background">
+    <div class="gradient_1">
+
+        <div class="logo">
+            <img src="img/webvector.png" alt="sasa">
+        </div>
+
+        <div class="terminal-background">
+            <div class="terminal-data">
+                <h1>test</h1>
+                <div id="timer"></div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="btn_help">
+                <button class="btn_1">How does this work?</button>
+            </div>
+
+            <div class="help">
+
+                <h1>How to add an event:</h1>
+                <div class="intro">
+                    <p>Simply fill in the form with the title and description of the event. Don't forget to add a date! Without it, the countdown doesn't work and boy do we want it to work cause we went through a lot of effort to get it working, you know what that timer was actually doing? It was a countdown for the next tf2 event but it wasn't doing anything so we took it.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 </div>
+<div class="bottom-background">
+    <div class="gradient_1">
 
-<div id="timer"></div>
-
+    </div>
+</div>
 <footer>
-	Footer text will go here. Test boop.
+    <h1>Made by Mikey McMuffin &amp; Mijans</h1>
 </footer>
 
-</div>
 </body>
 </html>
