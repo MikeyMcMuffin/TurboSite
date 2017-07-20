@@ -164,6 +164,30 @@ hr{
     margin-top: 70px;
 }
 
+.post_layout{
+    display: flex;
+}
+
+.post_data{
+    width: 100%;
+}
+
+.post_map{
+    width: 40%;
+
+
+    display: none;
+
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 114px -1px rgba(0,0,0,0.75), inset 0px -50px 93px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 114px -1px rgba(0,0,0,0.75), inset 0px -50px 93px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 114px -1px rgba(0,0,0,0.75), inset 0px 0px 114px -1px rgba(0,0,0,0.75);
+}
+
+.post_map img{
+
+}
+
 footer{
     width: 75%;
     margin: auto;
@@ -206,5 +230,31 @@ footer{
 
     .intro p{
         width: 80%;
+    }
+
+    .post_data{
+        width: 50%;
+        margin-right: 10%;
+    }
+
+    .post_map{
+        width: 40%;
+
+        display: flex;
+
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+
+        border-radius: 5px;
+    }
+
+    .post_map img{
+        left: 50%;
+        margin-left: -200px;
+        top: 50%;
+        margin-top: -200px;
+        width: 500px;
+        position: absolute;
     }
 }

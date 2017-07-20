@@ -71,28 +71,22 @@ if(!$user->count()){
 
             <div class="post">
                 <!-- Need to add, profile pic -->
-                <h1>Pax south 2018</h1>
-                <h2>Posted by: Mikey McMuffin</h2>
-                <p>Location: San Antonio, Texas</p>
-                <!-- maybe add picture of location? -->
-                <p>Mission: To have a good time in texas!</p>
-                <p>Agents: ...</p>
-                <!-- show all other turbos that will join -->
-                <p>Date: 17/01/18</p>
-                <!-- show all other turbos that will join -->
-            </div>
-
-            <div class="post">
-                <!-- Need to add, profile pic -->
-                <h1>Gamescon 2378</h1>
-                <h2>Posted by: Mijans</h2>
-                <p>Location: Keulen, Germany</p>
-                <!-- maybe add picture of location? -->
-                <p>Mission: Run around Germany and play some TF2 during gamescon!</p>
-                <p>Agents: ...</p>
-                <!-- show all other turbos that will join -->
-                <p>Date: 22/08/78</p>
-                <!-- show all other turbos that will join -->
+                <div class="post_layout">
+                    <div class="post_data">
+                        <h1>Pax south 2018</h1>
+                        <h2>Posted by: Mikey McMuffin</h2>
+                        <p>Location: San Antonio, Texas</p>
+                        <!-- maybe add picture of location? -->
+                        <p>This is filler text, just ignore me, actually this might be a good way to take notes! So what i need to do, either add an actual img of the city where the event is or add a random img of SFM tf2 characters. Also add an inspect function on a map that redirects user to google maps?</p>
+                        <p>Agents: ...</p>
+                        <!-- show all other turbos that will join -->
+                        <p>Date: 17/01/18</p>
+                        <!-- show all other turbos that will join -->
+                    </div>
+                    <div class="post_map">
+                        <img src="img/map.jpg" alt="placeholderMap" >
+                    </div>
+                </div>
             </div>
 
         </div>
