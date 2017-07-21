@@ -42,8 +42,13 @@ if(!$user->count()){
         </div>
 
         <div class="terminal-background">
+            <div class="terminal-img">
+                <img src="img/map.jpg" alt="placeholderMap" >
+            </div>
             <div class="terminal-data">
-                <h1>test</h1>
+                <h2>Next event</h2>
+                <h1>Pax south 2018</h1>
+                <h2>Mission begins in:</h2>
                 <div id="timer"></div>
             </div>
         </div>
