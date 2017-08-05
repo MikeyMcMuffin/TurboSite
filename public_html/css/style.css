@@ -1,0 +1,308 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: tf2-chalk;
+    src: url("tf2professor.ttf");
+}
+
+@font-face {
+    font-family: tf2-data;
+    src: url("Old computer St.ttf");
+}
+
+body{
+    background-color: #333333;
+    font-family: arial, sans-serif;
+}
+
+hr{
+    border:none;
+    border-bottom: 2px dashed white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-background{
+    background-image: url(../img/blu_wall_top.jpg);
+    background-size: 400px 400px;
+}
+
+.bottom-background{
+    background-image: url(../img/blu_wall_bottom.jpg);
+    background-size: 400px 400px;
+    background-repeat: repeat-x;
+    height: 400px;
+}
+
+.gradient_1, .gradient_2{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+5,d7dee3+50,333333+95&1+5,0+20,0+80,1+95 */
+    background: -moz-linear-gradient(left, rgba(51,51,51,1) 5%, rgba(106,108,110,0) 20%, rgba(215,222,227,0) 50%, rgba(106,108,110,0) 80%, rgba(51,51,51,1) 95%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(51,51,51,1) 5%,rgba(106,108,110,0) 20%,rgba(215,222,227,0) 50%,rgba(106,108,110,0) 80%,rgba(51,51,51,1) 95%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(51,51,51,1) 5%,rgba(106,108,110,0) 20%,rgba(215,222,227,0) 50%,rgba(106,108,110,0) 80%,rgba(51,51,51,1) 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#333333',GradientType=1 ); /* IE6-9 */
+}
+
+.gradient_2{
+    height: 400px;
+}
+
+.logo{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
+    width: 50%;
+
+    display: none;
+}
+
+.logo img{
+    display: block;
+    margin: auto;
+    height: 200px;
+}
+
+.terminal-background{
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    background-image: url(../img/screen.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+    position: relative;
+
+}
+
+.terminal-data{
+    color: white;
+    /*font-family: tf2-data, sans-serif;*/
+    font-family: courier, sans-serif;
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    line-height: 45px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 125px;
+    padding-bottom: 85px;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    font-weight: bold;
+}
+
+
+.terminal-data h1{
+    font-size: 2em;
+}
+
+.terminal-data h2{
+    font-size: 1.2em;
+}
+
+.terminal-img{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.terminal-img img{
+    opacity: 0.3;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+
+}
+
+.countdown{
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.container{
+    background-image: url(../img/blueprint.png);
+    background-size: 400px 400px;
+    width: 100%;
+    margin: auto;
+
+    font-family: tf2-chalk, sans-serif;
+    color: white;
+    padding: 25px;
+
+    -webkit-box-shadow: 0px 0px 114px -1px rgba(0,0,0,0.75), inset 0px -50px 93px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 114px -1px rgba(0,0,0,0.75), inset 0px -50px 93px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 114px -1px rgba(0,0,0,0.75), inset 0px 0px 114px -1px rgba(0,0,0,0.75);
+
+}
+
+
+.container p{
+    font-size: 2em;
+}
+
+.container h1{
+    font-size: 3em;
+}
+
+.help{
+    display: none;
+}
+
+.help_div, .post{
+    border-bottom: 2px dashed white;
+    border-top: 2px dashed white;
+    padding: 25px 0 25px 0;
+    margin-bottom: 20px;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_help{
+    text-align:center;
+    margin:auto;
+}
+
+.btn_1{
+    padding: 10px 25px 10px 25px;
+    text-align: center;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 5px;
+    color: #e3e3e3;
+    font-family: tf2-chalk, sans-serif;
+    font-size: 2.2em;
+}
+
+.btn_1:hover{
+    border: 3px solid white;
+    color: white;
+}
+
+.btn_1:active{
+    transition: 0.05s ease-in;
+    font-size: 2.5em;
+}
+
+.close_btn{
+    margin-top: 70px;
+}
+
+.post_layout{
+    display: flex;
+}
+
+.post_data{
+    width: 100%;
+}
+
+.post_map{
+    width: 40%;
+
+
+    display: none;
+
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 114px -1px rgba(0,0,0,0.75), inset 0px -50px 93px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 114px -1px rgba(0,0,0,0.75), inset 0px -50px 93px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 114px -1px rgba(0,0,0,0.75), inset 0px 0px 114px -1px rgba(0,0,0,0.75);
+}
+
+.post_map img{
+
+}
+
+footer{
+    width: 75%;
+    margin: auto;
+    color: #717171;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 750px) {
+
+    .container{
+        width: 60%;
+    }
+
+    .terminal-background{
+        width: 70%;
+
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+
+    .container{
+        width: 950px;
+    }
+
+
+    .terminal-background{
+        width: 1000px;
+    }
+
+    .intro{
+        flex-direction: row;
+    }
+
+    .intro p{
+        width: 80%;
+    }
+
+    .post_data{
+        width: 50%;
+        margin-right: 10%;
+    }
+
+    .post_map{
+        width: 40%;
+
+        display: flex;
+
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+
+        border-radius: 5px;
+
+        background-color:#000;
+    }
+
+
+    .post_map img{
+        left: 50%;
+        margin-left: -200px;
+        top: 50%;
+        margin-top: -200px;
+        width: 500px;
+        position: absolute;
+    }
+
+    .post_map img:hover{
+        opacity:0.5;
+        width: 550px;
+        transform: scale(1);
+        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    }
+}
