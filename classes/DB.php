@@ -10,7 +10,6 @@ class DB {
 	private function __construct() {
 		try {
 			$this->_pdo = new PDO('mysql:host=' . Config::get('mysql/DBhost') . ';dbname=' . Config::get('mysql/DBname'),Config::get('mysql/DBusername'),Config::get('mysql/DBpassword'));
-			echo 'Connected';
 		} catch(PDOExeption $e){
 			die($e->getMessage());
 		}
@@ -73,7 +72,7 @@ class DB {
 	}
 
 	public function delete($table, $where){
-		return $this->action('DELETE *', $table, $where);
+		return $this->action('DELETE', $table, $where);
 	}
 
 	public function insert($table,$fields = array()){
@@ -91,7 +90,7 @@ class DB {
 
 		$sql= "INSERT INTO {$table} (`" . implode('`, `',$keys) . "`) VALUES ({$values})";
 
-		if($this->query($sql, $fields)->error()){
+		if(!$this->query($sql, $fields)->error()){
 			return true;
 		}
 		

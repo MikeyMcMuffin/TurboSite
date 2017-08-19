@@ -5,12 +5,26 @@ if(Session::exists('home')) {
 	echo '<p>' . Session::flash('home') . '</p>';
 }
 
+$user = new User();
+if($user->isLoggedIn()){
+?>
+	<p>Hello <a href="#">  <?php echo escape($user->data()->username); ?></a>!</p>
+
+	<ul>
+		<li><a href="logout.php">Log out</a></li>
+	</ul>
+
+<?php
+} else{
+	echo '<p>You need to <a href="login.php">login</a> or <a href="register.php">register</a></p>';
+}
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Turbo Countdown</title>
-	<link rel="stylesheet" type="text/css" href="/css/TurboSite.css">
+	<link rel="stylesheet" type="text/css" href="css/TurboSite.css">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/jquery.countdown.css"> 
 	<script type="text/javascript" src="js/jquery.plugin.js"></script> 
