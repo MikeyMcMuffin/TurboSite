@@ -75,7 +75,6 @@ hr{
     padding-bottom: 70px;
     padding-left: 70px;
     padding-right: 70px;
-
     -webkit-box-shadow: 0px 0px 71px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 71px -5px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 71px -5px rgba(0,0,0,0.75);
@@ -126,8 +125,6 @@ hr{
     left: 50%;
     margin-left: -200px;
     margin-top: -200px;
-
-
 }
 
 .countdown{
