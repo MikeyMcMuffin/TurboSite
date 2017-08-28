@@ -14,6 +14,7 @@ if($user->isLoggedIn()){
 	if($user->hasPermission('admin')) {
 	}
 } else{
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,39 +38,6 @@ if($user->isLoggedIn()){
 <body>
 
 <script src="js/effects.js"></script>
-<div class="main-background">
-    <div class="gradient_1">
-
-        <div class="logo">
-            <img src="img/webvector.png" alt="sasa">
-        </div>
-
-        <div class="terminal-background">
-            <div class="terminal-img">
-                <img src="img/map.jpg" alt="placeholderMap" >
-            </div>
-            <div class="terminal-data">
-                <h2>Next event</h2>
-                <h1>Pax south 2018</h1>
-                <h2>Mission begins in:</h2>
-                <div id="timer"></div>
-            </div>
-        </div>
-
-        <div class="container">
-
-            <div class="help_div">
-
-                <div class="btn_help">
-                    <button class="btn_1">How does this work?</button>
-                </div>
-
-                <div class="help">
-
-                    <h1>How to add an event:</h1>
-                    <div class="intro">
-                        <p>Simply fill in the form with the title and description of the event. Don't forget to add a date! Without it, the countdown doesn't work and boy do we want it to work cause we went through a lot of effort to get it working, you know what that timer was actually doing? It was a countdown for the next tf2 event but it wasn't doing anything so we took it.</p>
-                    </div>
 <div class="main-background">
     <div class="gradient_1">
 
