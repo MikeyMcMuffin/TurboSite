@@ -111,7 +111,7 @@ class DB {
 
 		$sql= "UPDATE {$table} SET {$set} WHERE users_id = {$id}";
 
-		if($this->query($sql, $fields)->error()){
+		if(!$this->query($sql, $fields)->error()){
 			return true;
 		}
 

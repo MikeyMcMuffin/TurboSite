@@ -33,6 +33,17 @@ class User {
 		}
 	}
 
+	public function update($fields = array(), $id = null) {
+
+		if(!$id && $this->isLoggedIn()){
+			$id = $this->data()->users_id;
+		}
+
+		if(!$this->_db->update('users', $id, $fields)) {
+			throw new Exception('There was a problem updating.');
+		}
+	}
+
 	public function find($user = null){
 		if($user){
 			$field = (is_numeric($user)) ? 'users_id' : 'username';
@@ -83,6 +94,15 @@ class User {
 
 	public function exists() {
 		return (!empty($this->_data)) ? true : false;
+	}
+
+	public function hasPermission($key) {
+		$group = $this->_db->get('groups', array('groups_id', '=', $this->data()->group));
+		
+		if($group->count()) {
+			$permissions = json_decode($group->first()->permissions, true);
+			print_r($permissions);
+		}
 	}
 
 	public function logout() {
